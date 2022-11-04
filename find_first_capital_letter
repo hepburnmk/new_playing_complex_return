@@ -1,0 +1,12 @@
+# creating the code to find the first capital letter in a given string
+def find_first_capital_letter(string_name):
+    capital_letter = None 
+    for letter in string_name:
+        if letter.upper() == letter and letter != " ": 
+# if the given letter is the same as the letter after the .upper() method - it is a capital, check it is not whitespace.  
+            capital_letter = letter
+            break
+    if capital_letter is None:
+        return "No capital letters found"
+    else:
+        return "First capital letter was " + capital_letter
